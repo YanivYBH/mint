@@ -216,7 +216,7 @@ function App() {
             style={{
               backgroundColor: "var(--accent)",
               borderRadius: 24,
-              
+              height: "200px"
              
             }}
           >
