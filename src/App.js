@@ -206,23 +206,21 @@ function App() {
         
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-           
-          </s.Container>
+       
           <s.SpacerLarge />
           
           <s.Container
-            flex={2}
-            jc={"center"}
+            
+            
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
               borderRadius: 24,
-              border: "groove",
-              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              
+             
             }}
           >
-             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+             
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -246,11 +244,7 @@ function App() {
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  The sale has ended.
-                </s.TextTitle>
+                
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
@@ -263,18 +257,9 @@ function App() {
               </>
             ) : (
               <>
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
-                </s.TextTitle>
+                
                 <s.SpacerXSmall />
-                <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  Excluding gas fees.
-                </s.TextDescription>
+                
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
@@ -283,6 +268,7 @@ function App() {
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
+                        marginTop: "-40px"
                       }}
                     >
                       Connect to the {CONFIG.NETWORK.NAME} network
@@ -293,6 +279,10 @@ function App() {
                         e.preventDefault();
                         dispatch(connect());
                         getData();
+                      }}
+                      style={{
+                    
+                        marginTop: "-10px"
                       }}
                     >
                       CONNECT
