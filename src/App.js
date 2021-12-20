@@ -76,10 +76,11 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  width: 340px;
-  height: 320px;
+  width: 370px;
+  height: 370px;
   background-color: var(--accent);
   border-radius: 24px;
+  margin-top: -20px;
   @media (min-width: 900px) {
     width: 250px;
   }
