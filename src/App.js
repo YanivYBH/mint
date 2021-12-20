@@ -32,7 +32,7 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: var(--primary);
+  background-color: #f1f1f1;
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -227,6 +227,7 @@ function App() {
                 fontSize: 30,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
+                marginTop: "-35px"
               }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
@@ -307,6 +308,7 @@ function App() {
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
+                        marginTop:"-25px"
                       }}
                     >
                       {feedback}
