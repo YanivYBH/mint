@@ -64,7 +64,13 @@ export const ResponsiveWrapper = styled.div`
     flex-direction: row;
   }
 `;
+export const TextTitle = styled.div`
+margin-top:3px;
+@media (min-width: 767px) {
+  margin-top:-25px
+}
 
+`;
 export const StyledLogo = styled.img`
   width: 200px;
   @media (min-width: 767px) {
@@ -216,7 +222,7 @@ function App() {
             style={{
               backgroundColor: "var(--accent)",
               borderRadius: 24,
-              height: "200px"
+              height: "150px"
              
             }}
           >
@@ -227,7 +233,7 @@ function App() {
                 fontSize: 30,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
-                marginTop: "-35px"
+                marginTop: "-25px"
               }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}

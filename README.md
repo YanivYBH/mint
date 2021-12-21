@@ -59,8 +59,8 @@ Note: this dapp is designed to work with the intended NFT smart contract, that o
     "SYMBOL": "Matic",
     "ID": 137
   },
-  "NFT_NAME": "Nerdy Coder Clones",
-  "SYMBOL": "NCC",
+  "NFT_NAME": "Teddy Bear Squad",
+  "SYMBOL": "TBS",
   "MAX_SUPPLY": 1000,
   "WEI_COST": 75000000000000000,
   "DISPLAY_COST": 0.075,
@@ -96,7 +96,7 @@ Remember to update the title and description the `public/index.html` file
 
 ```html
 <title>Nerdy Coder Clones</title>
-<meta name="description" content="Mint your Nerdy Coder Clone NFT" />
+<meta name="description" content="Mint your teddy bear" />
 ```
 
 Also remember to update the short_name and name fields in the `public/manifest.json` file
